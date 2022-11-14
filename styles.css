@@ -193,7 +193,7 @@ a:hover {
     text-decoration: none;
     display: block;
     text-overflow: ellipsis;
-    max-width: 500px;
+    max-width: 200px;
     white-space: nowrap;
     overflow: hidden;
 }
