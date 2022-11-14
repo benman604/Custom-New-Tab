@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Tab</title>
+    <link rel="icon" type="image/png" id="favicon" href="chrome://branding/content/icon32.png" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="root">
+        <div class="branding">
+            <div class="logo"></div>
+            <div class="watermark"></div>
+        </div>
+
+        <form action="/" id="form">
+            <input type="text" name="q" id="commandline" class="box" placeholder="Type a command..." autocomplete="off">
+        </form>
+
+        <div class="grid">
+            <div class="box">
+                <p>College Apps</p>
+                <ul>
+                    <li><a href="https://docs.google.com/document/d/1_oBHqveOH-z1QvybhqE7CcsAiJwWMCsalZNsrtlt0Eo/edit">Writing</a></li>
+                    <li><a href="https://apply.commonapp.org/login">CommonApp</a></li>
+                    <li><a href="https://apply.universityofcalifornia.edu/my-application/login">UC</a></li>
+                    <li><a href="https://calstate.liaisoncas.com/applicant-ux/#/login">CSU</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/17crmjRtfTR5doOO4SmvCV7-8ToO_j0d7rY9bXjVyuXM/edit#gid=848108573">Portals</a>  </li> 
+                </ul>
+            </div>
+
+            <div class="box">
+                <p>School</p>
+                <ul>
+                    <li><a href="https://fremontunifiedca.infinitecampus.org/campus/portal/students/fremont.jsp?status=login">Infinite Campus</a></li>
+                    <li><a href="https://classroom.google.com/u/0/">Classroom</a></li>
+                    <li><a href="https://drive.google.com/drive/u/0/my-drive">Drive</a></li>
+                    <li><a href="https://foothillcollege.instructure.com/">Canvas</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="box">
+                <p>Work</p>
+                <ul>
+                    <li><a href="https://gmail.com">Gmail</a></li>
+                    <li><a href="https://calendar.google.com/calendar/u/0/r">Calendar</a></li>
+                    <li><a href="https://github.com/benman604">Github</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <p>Social</p>
+                <ul>
+                    <li><a href="https://youtube.com">Youtube</a></li>
+                    <li><a href="https://open.spotify.com/">Spotify</a></li>
+                    <li><a href="https://reddit.com">Reddit</a></li>
+                    <li><a href="https://discord.com/app">Discord</a></li>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <div>
+                <p style="float: left">Notes</p>
+                <a href="#" id="delete" class="right">Delete</a>
+                <div class="right dropdown">
+                    <a href="#">My Notes</a>
+                    <div class="dropdown-content" id="all">
+                        <!-- <a href="#">Link 1 but its like super duper long darngwefw efw ef wef wefef e fwef we fwef wef wefwef ew</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a> -->
+                    </div>
+                </div>
+                <a href="#" id="new" class="right">New</a>
+            </div>
+
+            <textarea class="box" id="notes">
+            </textarea>
+        </div>
+    </div>
+    <br><br><br>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
