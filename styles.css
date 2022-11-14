@@ -43,6 +43,10 @@ body {
     width: 82px;
 }
 
+.centered * {
+    text-align: center;
+}
+
 .watermark {
     background: url("chrome://branding/content/firefox-wordmark.svg") no-repeat center center;
     background-size: 134px;
@@ -61,13 +65,22 @@ body {
     padding: 8px 16px;
 }
 
+ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
 textarea {
     border: none;
     color: rgb(194, 194, 194);
     font-family: sans-serif;
     font-size: 16px;
     height: 200px;
-    width: 96%;
+    width: 90%;
     margin-top: 0 !important;
 }
 
@@ -115,13 +128,41 @@ textarea:focus {
     min-width: 0;
 }
 
-a {
+/* a {
     color: #7ddcff;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+} */
+
+a {
+    color: rgb(121, 226, 240);
+    text-decoration: none;
+}
+  
+a {
+    background:
+        linear-gradient(
+        to right,
+        rgb(0, 0, 0),
+        rgb(0, 0, 0)
+    ),
+        linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+  
+a:hover {
+    background-size: 0 3px, 100% 3px;
 }
 
 .right {
