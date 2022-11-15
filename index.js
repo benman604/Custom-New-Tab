@@ -125,8 +125,6 @@ if(localStorage.getItem('focusmode') !== null) {
 }
 
 function toggleFocusmode(){
-    focusmode = !focusmode
-    localStorage.setItem('focusmode', JSON.stringify(focusmode))
     document.querySelector('.below').classList.toggle('hidden')
     document.querySelector('.root').classList.toggle('vcenter')
     document.getElementById('oneline').classList.toggle('hidden')
@@ -136,4 +134,5 @@ function toggleFocusmode(){
 document.getElementById("togglebottom").addEventListener('click', function(e) {
     e.preventDefault()
     toggleFocusmode()
+    localStorage.setItem('focusmode', JSON.stringify(!focusmode))
 })
