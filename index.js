@@ -2,6 +2,11 @@ var commandline = document.querySelector('#commandline')
 var form = document.querySelector('form')
 const date = new Date()
 
+// transition on background image load
+document.querySelector(".backgroundimg").onload = function() {
+    this.style.opacity = 1
+}
+
 // date formater
 function formatAMPM(date) {
     var hours = date.getHours();
