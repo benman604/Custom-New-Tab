@@ -8,9 +8,14 @@
 
 <body>
     <div class="fab" id="togglebottom">
-        <svg viewBox="0 0 100 80" width="40" height="40">
-            <circle cx="50" cy="50" r="50" />
-        </svg>        
+        <svg viewBox="0 0 100 80" width="40" height="40" class="hidden" id="twoline">
+            <rect width="100" height="20" />
+            <rect y="35" width="100" height="50" />
+        </svg>
+
+        <svg viewBox="0 0 100 80" width="40" height="40" id="oneline">
+            <rect width="100" height="40" />
+        </svg>
     </div>
     <div class="backgroundgradient"></div>
     <img class="backgroundimg" src="https://source.unsplash.com/random/?wallpaper">
@@ -19,12 +24,12 @@
         <div class="branding">
             <div class="logo"></div>
             <div class="watermark"></div>
-        </div>
-        
+        </div> <!-- branding -->
+    
         <form action="/" id="form">
             <input type="text" name="q" id="commandline" class="box" placeholder="Type a command..." autocomplete="off" autofocus>
-        </form>
-        
+        </form> <!-- form -->
+    
         <div class="below">
             <div class="grid">
                 <div class="box">
@@ -37,7 +42,7 @@
                         <li><a href="https://calstate.liaisoncas.com/applicant-ux/#/login">CSU App</a></li>
                     </ul>
                 </div>
-            
+    
                 <div class="box">
                     <p>School</p>
                     <ul>
@@ -55,7 +60,7 @@
                         <li><a href="https://github.com/benman604">Github</a></li>
                     </ul>
                 </div>
-            
+    
                 <div class="box">
                     <p>Social</p>
                     <ul>
@@ -67,7 +72,8 @@
                         <li><a href="https://instagram.com">Instagram</a></li>
                     </ul>
                 </div>
-            </div>
+            </div> <!-- grid 1 -->
+
             <div class="box">
                 <div class="grid centered">
                     <a href="https://docs.google.com/document/d/12ZYjcAFCIYQfsDvSbze7-1wYDjzINMwYZMMuX3_zvbc/edit">Gov Calendar</a>
@@ -76,8 +82,8 @@
                     <a href="https://docs.google.com/spreadsheets/d/1TkWUuSswmAg811TL9-mJ8xSxfCzutr-Y8AUoMuzhF6k/edit#gid=0">APES Slides</a>
                     <a href="https://ihs-fusd-ca.schoolloop.com/file/1548059165367/1327737725638/2032417159146621876.pdf">QUEST Packet</a>
                 </div>
-            </div>
-            
+            </div> <!-- grid 2 -->
+    
             <div class="grid">
                 <div class="box">
                     <div>
@@ -103,10 +109,10 @@
                         <li><a href="https://classroom.google.com/u/0/c/NTI2MzczNjcwODkz">English 12</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
+            </div> <!-- grid 3 -->
+        </div> <!-- below -->
         
-    </div>
+    </div> <!-- root -->
     <br><br><br>
     
     <script src="index.js"></script>

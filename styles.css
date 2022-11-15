@@ -16,7 +16,7 @@ html {
 
 .fab{
     position: fixed;
-    bottom: 0;
+    top: 0;
     right: 0;
     margin: 1rem;
     width: 1rem;
@@ -85,6 +85,19 @@ body {
 
 .centered * {
     text-align: center;
+}
+
+.vcenter {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+body{
+    height: 60vh;
 }
 
 .hidden {

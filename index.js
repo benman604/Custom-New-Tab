@@ -115,7 +115,25 @@ textarea.addEventListener('input', (e) => {
     updateList()
 })
 
+let focusmode = false
+
+if(localStorage.getItem('focusmode') !== null) {
+    focusmode = JSON.parse(localStorage.getItem('focusmode'))
+    if(focusmode){
+        toggleFocusmode()
+    }
+}
+
+function toggleFocusmode(){
+    focusmode = !focusmode
+    localStorage.setItem('focusmode', JSON.stringify(focusmode))
+    document.querySelector('.below').classList.toggle('hidden')
+    document.querySelector('.root').classList.toggle('vcenter')
+    document.getElementById('oneline').classList.toggle('hidden')
+    document.getElementById('twoline').classList.toggle('hidden')
+}
+
 document.getElementById("togglebottom").addEventListener('click', function(e) {
     e.preventDefault()
-    document.querySelector('.below').classList.toggle('hidden')
+    toggleFocusmode()
 })
