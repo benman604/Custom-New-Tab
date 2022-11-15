@@ -11,9 +11,29 @@ html {
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #292d3e 2%, #292d3ea6 100%), var(--background-image);
-    background-size: cover !important;
-    background-attachment: fixed;
+}
+
+.backgroundgradient, .backgroundimg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: bg 1s;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.backgroundgradient {
+    background: linear-gradient(to bottom, #292d3e 2%, #292d3ea6 100%);
+    z-index: -1;
+}
+
+.backgroundimg {
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: -2;
 }
 
 body {
@@ -61,13 +81,13 @@ body {
     background: #141621a9;
     color: white;
     border-radius: 4px;
-    margin-top: 32px;
+    margin-top: 15px;
     padding: 8px 16px;
 }
 
 ul {
     list-style: none;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 li {
@@ -128,26 +148,17 @@ textarea:focus {
     min-width: 0;
 }
 
-/* a {
-    color: #7ddcff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-} */
-
 a {
-    color: rgb(121, 226, 240);
+    color: rgb(178, 208, 212);
     text-decoration: none;
 }
   
 a {
     background:
         linear-gradient(
-        to right,
-        rgb(0, 0, 0),
-        rgb(0, 0, 0)
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
     ),
         linear-gradient(
         to right,
@@ -155,7 +166,7 @@ a {
         rgba(255, 0, 180, 1),
         rgba(0, 100, 200, 1)
     );
-    background-size: 100% 3px, 0 3px;
+    background-size: 100% 25px, 0 3px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
