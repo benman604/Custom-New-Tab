@@ -114,3 +114,8 @@ textarea.addEventListener('input', (e) => {
     localStorage.setItem('notes', JSON.stringify(notes))
     updateList()
 })
+
+document.getElementById("togglebottom").addEventListener('click', function(e) {
+    e.preventDefault()
+    document.querySelector('.below').classList.toggle('hidden')
+})
