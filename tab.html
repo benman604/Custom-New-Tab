@@ -29,8 +29,29 @@
         <form action="/" id="form">
             <input type="text" name="q" id="commandline" class="box" placeholder="Type a command..." autocomplete="off" autofocus>
         </form> <!-- form -->
+
+        <div class="box visible-on-collapse hidden">
+            <div class="grid centered">
+                <a href="https://apclassroom.collegeboard.org/subjects/preview">AP Classroom</a>
+                <a href="https://classroom.google.com/u/0/c/NDk3NTUwMDYyMTg2">AP Gov/Econ</a>
+                <a href="https://classroom.google.com/u/0/c/NDk3MjY1ODI1MDEz">AP Bio</a>
+                <a href="https://classroom.google.com/u/0/c/NTM4MjU4MzM4MzIw">AP Enviro</a>
+                <a href="https://foothillcollege.instructure.com/courses/22141">Data Struct</a>
+                <a href="https://docs.google.com/document/d/1_oBHqveOH-z1QvybhqE7CcsAiJwWMCsalZNsrtlt0Eo/edit">Essays</a>
+            </div>
+        </div> <!-- visible-on-collapse -->
     
         <div class="below">
+            <div class="box">
+                <div class="grid centered">
+                    <a href="https://docs.google.com/document/d/12ZYjcAFCIYQfsDvSbze7-1wYDjzINMwYZMMuX3_zvbc/edit">Gov Calendar</a>
+                    <a href="https://login.pearson.com/v1/piapi/piui/signin?client_id=dN4bOBG0sGO9c9HADrifwQeqma5vjREy&okurl=https:%2F%2Fportal.mypearson.com%2Fcourse-home&siteid=8313">Mastering Bio</a>
+                    <a href="https://sites.google.com/fusdk12.net/koehlerbio2022/ap-biology/slides?authuser=0">Bio Slides</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1TkWUuSswmAg811TL9-mJ8xSxfCzutr-Y8AUoMuzhF6k/edit#gid=0">APES Slides</a>
+                    <a href="https://ihs-fusd-ca.schoolloop.com/file/1548059165367/1327737725638/2032417159146621876.pdf">QUEST Packet</a>
+                </div>
+            </div> <!-- grid 1 -->
+
             <div class="grid">
                 <div class="box">
                     <p>College Apps</p>
@@ -48,8 +69,8 @@
                     <ul>
                         <li><a href="https://fremontunifiedca.infinitecampus.org/campus/portal/students/fremont.jsp?status=login">Infinite Campus</a></li>
                         <li><a href="https://drive.google.com/drive/u/0/my-drive">Drive</a></li>
-                        <li><a href="https://apstudents.collegeboard.org/">AP Classroom</a></li>
-                        <li><a href="https://foothillcollege.instructure.com/">Canvas</a></li>
+                        <li><a href="https://www.khanacademy.org/profile/me/courses">Khan Academy</a></li>
+                        <li><a href="https://foothillcollege.instructure.com/courses/22141/">Canvas</a></li>
                     </ul>
                 </div>
                 <div class="box">
@@ -72,16 +93,6 @@
                         <li><a href="https://instagram.com">Instagram</a></li>
                     </ul>
                 </div>
-            </div> <!-- grid 1 -->
-
-            <div class="box">
-                <div class="grid centered">
-                    <a href="https://docs.google.com/document/d/12ZYjcAFCIYQfsDvSbze7-1wYDjzINMwYZMMuX3_zvbc/edit">Gov Calendar</a>
-                    <a href="https://login.pearson.com/v1/piapi/piui/signin?client_id=dN4bOBG0sGO9c9HADrifwQeqma5vjREy&okurl=https:%2F%2Fportal.mypearson.com%2Fcourse-home&siteid=8313">Mastering Bio</a>
-                    <a href="https://sites.google.com/fusdk12.net/koehlerbio2022/ap-biology/slides?authuser=0">Bio Slides</a>
-                    <a href="https://docs.google.com/spreadsheets/d/1TkWUuSswmAg811TL9-mJ8xSxfCzutr-Y8AUoMuzhF6k/edit#gid=0">APES Slides</a>
-                    <a href="https://ihs-fusd-ca.schoolloop.com/file/1548059165367/1327737725638/2032417159146621876.pdf">QUEST Packet</a>
-                </div>
             </div> <!-- grid 2 -->
     
             <div class="grid">
@@ -99,15 +110,24 @@
                     </textarea>
                 </div>
                 <div class="box">
-                    <p>Google Classrooms</p>
-                    <ul>
-                        <li><a href="https://classroom.google.com/u/0/c/NDk3NTY4ODM4MzAy">Guitar 1</a></li>
-                        <li><a href="https://classroom.google.com/u/0/c/NTM5MjczODE4NjM3">Art 1</a></li>
-                        <li><a href="https://classroom.google.com/u/0/c/NDk3MjY1ODI1MDEz">AP Bio</a></li>
-                        <li><a href="https://classroom.google.com/u/0/c/NDk3NTUwMDYyMTg2">AP Gov/Econ</a></li>
-                        <li><a href="https://classroom.google.com/u/0/c/NTM4MjU4MzM4MzIw">AP Enviro</a></li>
-                        <li><a href="https://classroom.google.com/u/0/c/NTI2MzczNjcwODkz">English 12</a></li>
-                    </ul>
+                    <p>Classrooms</p>
+                    <div class="buttons">
+                        <a href="https://classroom.google.com/u/0/c/NDk3NTY4ODM4MzAy">Guitar 1</a> 
+                        <a href="https://classroom.google.com/u/0/c/NTM5MjczODE4NjM3">Art 1</a> 
+                        <div class="grid" style="grid-column-gap: 0.5rem">
+                            <a href="https://classroom.google.com/u/0/c/NDk3MjY1ODI1MDEz">AP Bio</a> 
+                            <a href="https://apclassroom.collegeboard.org/6/home">AP Classroom</a>
+                        </div>
+                        <div class="grid" style="grid-column-gap: 0.5rem">
+                            <a href="https://classroom.google.com/u/0/c/NDk3NTUwMDYyMTg2">AP Gov/Econ</a> 
+                            <a href="https://apclassroom.collegeboard.org/20/home">AP Classroom</a>
+                        </div>
+                        <div class="grid" style="grid-column-gap: 0.5rem">
+                            <a href="https://classroom.google.com/u/0/c/NTM4MjU4MzM4MzIw">AP Enviro</a> 
+                            <a href="https://apclassroom.collegeboard.org/14/home">AP Classroom</a>
+                        </div>
+                        <a href="https://classroom.google.com/u/0/c/NTI2MzczNjcwODkz">English 12</a> 
+                    </div>
                 </div>
             </div> <!-- grid 3 -->
         </div> <!-- below -->

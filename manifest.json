@@ -3,7 +3,7 @@
   
     "name": "New Tab",
     "description": "Replace default new tab page in Chrome with a useful new tab page.",
-    "version": "1.0",
+    "version": "1.1",
   
     "chrome_url_overrides" : {
       "newtab": "tab.html"

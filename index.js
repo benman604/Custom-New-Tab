@@ -129,6 +129,7 @@ function toggleFocusmode(){
     document.querySelector('.root').classList.toggle('vcenter')
     document.getElementById('oneline').classList.toggle('hidden')
     document.getElementById('twoline').classList.toggle('hidden')
+    document.querySelector('.visible-on-collapse').classList.toggle('hidden')
 }
 
 document.getElementById("togglebottom").addEventListener('click', function(e) {
