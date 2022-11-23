@@ -1,7 +1,7 @@
 Custom newtab for Firefox.
 
-![Screenshot](images/screenshot.png)
-![Screenshot](images/screenshot2.png)
+![Screenshot](old/images/screenshot.png)
+![Screenshot](old/images/screenshot2.png)
 
 ### Features
 - Local notes

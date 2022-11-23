@@ -1,7 +1,3 @@
-:root {
-    --background-image: url("https://source.unsplash.com/random/?wallpaper");
-}
-
 @font-face {
     font-family: 'Fira Sans';
     src: url('FiraSans-Regular.ttf');
@@ -171,7 +167,6 @@ textarea:focus {
     height: 32px;
     font-size: large;
     font-family: 'Fira Sans', sans-serif;
-    width: 96%;
 }
 
 #commandline:focus {
