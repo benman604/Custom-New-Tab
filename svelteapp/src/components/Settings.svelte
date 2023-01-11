@@ -5,17 +5,10 @@
     export let imageURL = ""
     let themeColor = "#2d333f"
 
-    $: {
-        try {
-            chrome.storage.local.set({wallpaper: imageURL})
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
-    $: {
+    function save() {
         document.documentElement.style.setProperty('--theme', themeColor)
         try {
+            chrome.storage.local.set({wallpaper: imageURL})
             chrome.storage.local.set({theme: themeColor})
         } catch (error) {
             console.log(error)
@@ -56,6 +49,8 @@
             <p>Theme Color: </p>
             <input type="color" bind:value={themeColor} class="box">
         </div>
+
+        <a class="button" on:click={save} href="#1">Save</a>
 	</Modal>
 {/if}
 

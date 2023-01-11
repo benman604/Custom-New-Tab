@@ -10,7 +10,7 @@
 	import Notes from './components/widgets/Notes.svelte';
 	
 	let focusMode = false	
-	let wallpaperUrl = "https://source.unsplash.com/random/?yosemite"
+	let wallpaperUrl = ""
 	console.log("ready")
 	
 	try {
@@ -107,6 +107,7 @@
 						<li><a href="https://fremontunifiedca.infinitecampus.org/campus/portal/students/fremont.jsp?status=login">Infinite Campus</a></li>
 						<li><a href="https://drive.google.com/drive/u/0/my-drive">Google Drive</a></li>
 						<li><a href="https://www.khanacademy.org/profile/me/courses">Khan Academy</a></li>
+						<li><a href="https://apclassroom.collegeboard.org/subjects/preview">AP Classroom</a></li>
 						
 						<br>
 						<li><a href="https://classroom.google.com/u/0/c/NTI2MzczNjcwODkz">English 12</a></li>
