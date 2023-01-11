@@ -1,5 +1,5 @@
 <script>
-    export let imageURL = "https://source.unsplash.com/random/?abstract wallpaper"
+    export let imageURL = ""
 
     function load(e){
         e.target.style.opacity = 1
@@ -8,7 +8,9 @@
 
 <main>
     <div class="backgroundgradient"></div>
-    <img class="backgroundimg" src={imageURL} on:load={load} alt="background">
+    {#if imageURL != ""}
+        <img class="backgroundimg" src={imageURL} on:load={load} alt="background">
+    {/if}
 </main>
 
 <style>
@@ -31,7 +33,7 @@
 
     .backgroundgradient {
         /* background: linear-gradient(to bottom, #292d3e 2%, #292d3ea6 100%); */
-        background: linear-gradient(to bottom, #292d3e 2%, #292d3e00 100%);
+        background: linear-gradient(to bottom, var(--theme) 2%, #ffffff00 100%);
         z-index: -1;
     }
 

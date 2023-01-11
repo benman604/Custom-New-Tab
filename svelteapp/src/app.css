@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&family=Roboto+Mono&display=swap');
 
 :root {
-    --palenight: #292d3e;
-    /* --palenight-transparent: #141621a9; */
-    --palenight-transparent: #1416219c;
-
+    /* --theme: #292d3e; */
+    --theme: #2d333f;
+    /* --theme-transparent: #141621a9; */
+    --theme-transparent: #1416219c;
 }
 
 body {
@@ -20,15 +20,16 @@ body {
 }
 
 .box {
-    background: var(--palenight-transparent);
+    background: var(--theme-transparent);
     color: white;
     border-radius: 4px;
-    margin-top: 15px;
+    margin-top: 1rem;
     padding: 8px 16px;
 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(3.9px);
+    border: none;
 }
 
 .grid {
@@ -71,7 +72,7 @@ a {
     background-size: 100% 25px, 0 3px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
-    transition: background-size 200ms;
+    transition: background-size 100ms;
     width: 100%;
     display: block;
 }
@@ -95,7 +96,7 @@ li {
     width: 100%;
 }
 
-.buttons a{
+.buttons a:not(.primary), .button{
     width: 100%;
     text-align: center;
     margin-top: 5px;
@@ -105,6 +106,12 @@ li {
     border-radius: 5px;
 }
 
-.buttons a:hover{
+.buttons a:hover:not(.primary), .button:hover{
     background-color: #292d3e;
+}
+
+.primary {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color:white;
 }

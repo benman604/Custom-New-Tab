@@ -83,8 +83,8 @@
                 {/if}
 
             {/each}
-            <button class="smallbutton" on:click={collectGarbage}>clear</button>
         </ul>
+        <button class="smallbutton" on:click={collectGarbage}>clear</button>
     {:else}
         <div class="box">Nothing todo.</div>
     {/if}
@@ -152,7 +152,7 @@
     input[type="checkbox"] {
         width: 15px;
         height: 15px;
-        background-color: var(--palenight);
+        background-color: var(--theme);
         border-radius: 50%;
         /* vertical-align: middle; */
         border: 1px solid #ddd;
